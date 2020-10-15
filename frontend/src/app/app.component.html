@@ -1,0 +1,23 @@
+<div class="home-screen">
+  <div class="pre-game-modal">
+    <span> New Game </span>
+    <form (ngSubmit)="onSubmit()" #newGameForm="ngForm">
+      <div class="form-group">
+        <label for="player1">Player 1</label>
+        <input type="text" class="form-control" id="player1"
+               required
+               name="player1">
+      </div>
+
+      <div class="form-group">
+        <label for="player2">Player 2</label>
+        <input type="text" class="form-control" id="player2"
+               required
+               name="player2">
+      </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!newGameForm.form.valid">New Game</button>
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet>

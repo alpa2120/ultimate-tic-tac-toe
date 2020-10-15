@@ -1,0 +1,17 @@
+// Import main styles
+@import '~src/styles.scss';
+
+.home-screen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    .pre-game-modal{
+        height: 300px;
+        width: 400px;
+        box-shadow: 2px 2px 8px grey;
+    }
+}
